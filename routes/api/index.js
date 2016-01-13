@@ -9,7 +9,8 @@ module.exports = function(app) {
   }).unless({
     path: [
       { url: '/api/users', methods: ['POST'] },
-      { url: '/api/sessions', methods: ['POST'] }
+      { url: '/api/sessions', methods: ['POST'] },
+      { url: '/api/videos', methods: ['GET'] }
     ]
   }));
 
